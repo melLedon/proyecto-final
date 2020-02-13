@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Halant|Oranienbaum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="c-estilos.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="container-fluid F-nav">
+        <div class="container navbar-default">
+            <nav class="navbar navbar-expand-lg" style="background-color: transparent">
+                <a class="navbar-brand" href="landing.html"><img class="logo" id="navbar_logo" src="logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Destinos</a>
+                            <div class="dropdown-menu fondoDropdown" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"> Norte</a>
+                                <a class="dropdown-item" href="#"> Centro</a>
+                                <a class="dropdown-item" href="#"> Sur</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Los 10+ visitados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="covertext">
+        <div class="container C-form">
+            <form action="action_page.php">
+
+                <label for="fname">Nombre</label>
+                <input type="text" id="fname" name="Nombre" placeholder="...">
+
+                <label for="lname">Apellido</label>
+                <input type="text" id="lname" name="Apellido" placeholder="...">
+
+                <label for="country">País</label>
+                <input type="text" id="Pais" name="País" placeholder="País..">
+
+                <label for="subject">Mensaje</label>
+                <textarea id="subject" name="subject" placeholder="Escribe algo.." style="height:100px"></textarea>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="row">
+            <span><i class="fab fa-facebook-square icono"></i></span>
+            <span><i class="fab fa-instagram-square icono"></i></span>
+            <span><i class="fab fa-twitter-square icono"></i></span>
+        </div>
+        <div class="row">
+            <p>Conociendo México® 2020 All Rights Reserved</p>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/d06f7f2362.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

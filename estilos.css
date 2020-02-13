@@ -1,0 +1,104 @@
+body{
+    background-image: url(F3.png);
+}
+
+.navbar{
+    background-color: transparent !important;
+}
+
+.logo{
+    height: 50px;
+}
+.nav-link{
+    color: white;        
+}
+
+a:hover {
+    color: rgb(78, 137, 145);
+}
+
+
+.container-fluid.main{
+    position: relative; /* To make the navbar positions relative to this container */
+    padding: 0;
+}
+
+.navbar-default {
+    background-image: none;
+    background-color: transparent; /* Make the menu become transparent */
+    border-radius: 0px;
+    border: 0;
+    box-shadow: none;
+    padding: 10px;
+    position: absolute; /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+}
+
+.carousel{
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.covertext {
+    position: absolute; /* To make the div to be place anywhere. It is out of the document flow */
+    top: 200px; /* The distance between the div with the top of document */
+    left: 0px; /* Make the div full width */
+    right: 0px; /* Make the div full width */
+}
+
+.title {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 600;
+    font-size: 90px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.Fotos_carrusel{
+    height: 100vh;
+}
+
+.c_cont{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carta{
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+}
+
+.alto_carta{
+    min-height: 410px;
+}
+
+.foto_cartas{
+    height: 200px;
+}
+
+
+
+.footer{
+    height: 100px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono{
+    font-size: 30px;
+    padding: 15px;
+}
+
