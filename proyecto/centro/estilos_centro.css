@@ -1,0 +1,41 @@
+body{
+    background-image:  url(F3.png);
+}
+.carta{
+    min-height: 240px;
+}
+
+.footer{
+    margin-top: .5px;
+    height: 100px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.icono{
+    font-size: 30px;
+    padding: 15px;
+}
+
+
+
+.texto_color{
+    font-size: 70px;
+    color:  rgb(19,94,7);
+color:  linear-gradient(90deg, rgba(19,94,7,1) 0%, rgba(255,255,255,1) 52%, rgba(250,0,0,1) 100%);
+}
+.imagen{
+    height: 200px;
+    width: 348px;
+}
+
+@media (min-width: 700px) {
+    .imagen{
+        height: 200px;
+        width: 348px;
+    }
+}
