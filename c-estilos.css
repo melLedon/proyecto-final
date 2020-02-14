@@ -8,17 +8,13 @@
     min-height: 130vh;
 }
 
-.nav-link{
-    color: white;        
-}
-
-a:hover {
-    color: rgb(214, 214, 214);
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
 }
 
 .covertext {
     position: absolute; /* To make the div to be place anywhere. It is out of the document flow */
-    top: 200px; /* The distance between the div with the top of document */
+    top: 150px; /* The distance between the div with the top of document */
     left: 0px; /* Make the div full width */
     right: 0px; /* Make the div full width */
     min-height: 100vh;

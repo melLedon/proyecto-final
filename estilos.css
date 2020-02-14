@@ -1,5 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
-    background-image: url(F3.png);
+    background-image: url(F.jpg);
+    background-size: cover;
 }
 
 .navbar{
@@ -9,16 +14,12 @@ body{
 .logo{
     height: 50px;
 }
-.nav-link{
-    color: white;        
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
 }
 
-a:hover {
-    color: rgb(78, 137, 145);
-}
-
-
-.container-fluid.main{
+.container.main{
     position: relative; /* To make the navbar positions relative to this container */
     padding: 0;
 }
@@ -37,7 +38,7 @@ a:hover {
     z-index: 10; /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
 }
 
-.carousel{
+.carousel1{
     background-position: center center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -62,19 +63,30 @@ a:hover {
 
 .Fotos_carrusel{
     height: 100vh;
+    
+}
+
+h2{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em gray;
+    padding: 20px;
+    margin: 20px;
 }
 
 .c_cont{
     margin-top: 100px;
     margin-bottom: 100px;
-    display: flex;
-    justify-content: space-around;
 }
 
 .carta{
     padding-left: 35px;
     padding-right: 35px;
     text-align: center;
+    min-height: 400px;
 }
 
 .alto_carta{
@@ -83,15 +95,67 @@ a:hover {
 
 .foto_cartas{
     height: 200px;
+    border-radius: 10px;
+}
+
+.c-visitados{
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding-bottom: 90px;
+    padding-top: 40px;
+
 }
 
 
+.lmv{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 600;
+    font-size: 65px;
+    color: white;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.IMG_10{
+    border-style: outset;
+    border-width: 5px;
+    border-color: #5D5E5E;
+    border-radius: 15px;
+}
+
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -50px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 1px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
+
+.letra_10{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
 
 .footer{
     height: 100px;
     color: white;
     background-color: black;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -100,5 +164,85 @@ a:hover {
 .icono{
     font-size: 30px;
     padding: 15px;
+}
+
+
+@media (max-width: 575.98px) {
+    .title{
+        font-size: 30px;
+    }
+    .carousel1{
+        height: 40vh;
+    }
+    .Fotos_carrusel{
+        height: 40vh;
+    }
+    .carta{
+        width: 80%;
+        
+    }
+    .cartas{
+        display: flex;
+        justify-content: center;
+    }
+    .covertext{
+        top: 150px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .title{
+        font-size: 45px;
+    }
+    .carousel1{
+        height: 60vh;
+    }
+    .Fotos_carrusel{
+        height: 60vh;
+    }
+    .carta{
+        width: 80%;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+    .covertext{
+        top: 200px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .title{
+        font-size: 45px;
+    }
+    .carousel1{
+        height: 70vh;
+    }
+    .Fotos_carrusel{
+        height: 70vh;
+    }
+    .carta{
+        width: 70%;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .covertext{
+        top: 200px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .title{
+        font-size: 90px;
+    }
+    .carousel1{
+        height: 70vh;
+    }
+    .Fotos_carrusel{
+        height: 70vh;
+    }
+    .covertext{
+        top: 380px;
+    }
 }
 
