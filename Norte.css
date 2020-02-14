@@ -1,16 +1,33 @@
 body{
-    background-image:  url(F3.png);
+    background-image: url(el_arco_cabo_san_lucas_mexico.jpg);
+    background-size: cover;
 }
-.carta_centro{
+
+.carta_norte{
     min-height: 310px;
+    margin-bottom: 40px;
     font-family: 'Comfortaa', cursive;
     text-align: justify;
 }
 .logo{
     height: 50px;
 }
+
+.nav-item a{
+    color: white;
+}
+
+.nav-item a:hover{
+color: black;
+font-weight: 600;
+}
+
 .F-nav{
-    background-color: #e3f2fd;
+    background-color: transparent;
+}
+
+.dropdown-item{
+    color: black !important;
 }
 
 .footer{
@@ -29,31 +46,33 @@ body{
     padding: 15px;
 }
 
-
-
 .texto_color{
+    font-family: 'Kaushan Script', cursive;
     font-size: 70px;
-    color:  rgb(19,94,7);
-color:  linear-gradient(90deg, rgba(19,94,7,1) 0%, rgba(255,255,255,1) 52%, rgba(250,0,0,1) 100%);
+    color:  white;
+    margin-top: 90px;
 }
-.imagen_centro{
+.imagen__norte{
     height: 200px;
     width: 100%;
 }
 
+
 @media (min-width: 577px) and (max-width: 992px){
 
-    .imagen__centro{
+    .imagen__norte{
         height: 350px;
     }
 
 }
 
 @media (max-width: 576px){
-    .imagen__centro{
+    .imagen__norte{
         height: 200px;
     }
-    .carta_centro{
+    .carta_norte{
         min-height: 180px;
     }
 }
+
+

@@ -1,5 +1,6 @@
 body{
-    background-image: url(F3.png);
+    background-image: url(mayan_ruins_tulum_mexico.jpg);
+    background-size: cover;
 }
   .carta_sur{
       min-height: 310px;
@@ -9,9 +10,23 @@ body{
   .logo{
     height: 50px;
 }
-.F-nav{
-    background-color: #e3f2fd;
+
+.nav-item a{
+    color: white;
 }
+.nav-item a:hover{
+color: black;
+font-weight: 600;
+}
+
+.dropdown-item{
+    color: black !important;
+}
+
+.F-nav{
+    background-color: transparent;
+}
+
   .footer{
     margin-top: .10px;
     height: 100px;
@@ -30,9 +45,10 @@ body{
 
 
 .texto_color{
+    font-family: 'Kaushan Script', cursive;
     font-size: 70px;
-    color:  rgb(19,94,7);
-color:  linear-gradient(90deg, rgba(19,94,7,1) 0%, rgba(255,255,255,1) 52%, rgba(250,0,0,1) 100%);
+    color:  white;
+    margin-top: 90px;
 }
 .imagen__sur{
     height: 200px;
