@@ -1,9 +1,17 @@
 body{
     background-image: url(F3.png);
 }
-  .carta{
-      min-height: 220px;
+  .carta_sur{
+      min-height: 310px;
+      font-family: 'Comfortaa', cursive;
+      text-align: justify;
   }
+  .logo{
+    height: 50px;
+}
+.F-nav{
+    background-color: #e3f2fd;
+}
   .footer{
     margin-top: .10px;
     height: 100px;
@@ -26,7 +34,27 @@ body{
     color:  rgb(19,94,7);
 color:  linear-gradient(90deg, rgba(19,94,7,1) 0%, rgba(255,255,255,1) 52%, rgba(250,0,0,1) 100%);
 }
-.imagen{
+.imagen__sur{
     height: 200px;
-    width: 348px;
+    width: 100%;
 }
+@media (min-width: 577px) and (max-width: 992px){
+
+    .imagen__sur{
+        height: 350px;
+    }
+
+}
+
+@media (max-width: 576px){
+    .imagen__sur{
+        height: 200px;
+    }
+    .carta_sur{
+        min-height: 180px;
+    }
+}
+
+
+
+

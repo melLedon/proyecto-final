@@ -8,23 +8,60 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a45db17ccc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <!--inicio de la nadvar-->
+    <div class="container-fluid F-nav">
+        <div class="container navbar-default">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+                <a class="navbar-brand" href="landing.html"><img class="logo" id="navbar_logo" src="logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Destinos</a>
+                            <div class="dropdown-menu fondoDropdown" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"> Norte</a>
+                                <a class="dropdown-item" href="#"> Centro</a>
+                                <a class="dropdown-item" href="#"> Sur</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Los 10+ visitados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--fin de la nadvar-->
     <!--Inio de las tarjetas-->
     <div class="container mt-5">
         <h1 class="texto_color"> <i class="fas fa-compass"></i> Centro</h1>
         <div class="row">
-            <div class=" col-12 col-sm-12 col-lg-4">
+            <div class="  my-5 col-12 col-lg-4">
                 <!--Inicio de las targetas-->
                 <div class="card">
-                    <img class="imagen"
+                    <img class="imagen_centro"
                         src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTExMVFhUVFhcVFRgYGRcXFRYXFhUXFhcYFRcYHSggGBolGxUVITEhJSkrLi4uFx8zODUtNygtLisBCgoKDg0OGhAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rLf/AABEIAKEBOgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAECBQAGB//EAEYQAAEDAgMEBwUFBgQEBwAAAAEAAhEDIQQxQRJRYXEFE4GRobHwBiIywdEUQlLh8RUjcoKSsjNTYtIWQ6LiBzRUY5Ojs//EABoBAAMBAQEBAAAAAAAAAAAAAAECAwAEBQb/xAAxEQACAgEDAgUCBAYDAAAAAAAAAQIRAwQSITFBExRRYaEigTJxkfAFNFKxwfFC0eH/2gAMAwEAAhEDEQA/APEtVgxV2VZoVBS+yrUwRqqhXBWMW2SiNQxKuza4IWGggapDFdqIAtYaBBiuGlHaEQMCFhoU2CpCcNMKjqCxgIcVdp3lcWquytYUgw2d6u0Del9lWbIySseghpKOrcLBdtneURtQpHY6Op0yM0QUhuV2Bx4BHbT4KbkOo2KmkDohPoLR6pd1Sm8gygKUKcaJoVI3dyo6kVApoeIg7Bas0uOZVPsq0AyENzVt4doqaKnYRthQjuBQu+mgOpBOuPBDcOCKYGjONBcaYTxpoD2cE6YrQqWqNlHLDuVhSKfcI0KdWqmmnTSKoWI7gUIuaqFqcfTQKlI70bBQq9pVOqP4kV1Hio+znejZiQVYFDa9ysHlORLwpAVmX4Iwp8VrDQNoVwDuRmU4C5rjqELDRVnJF2VbrOAV2O4fJC2MkgbKaMGIjGn8PiigcD65Ibg7UKkkb0RrymmRrbshEGzr5JXMKgJxK7q08HDQK20Dolcx1ESZQlSKKbc3cpbSSOYyiKikrtopxtBFZRIyU3lHUAVOlA1UuYU01pVww7lCWQooiQplWbTTuwpbTUXkKKIs2ip6hN9WVU0kniDbRJ9JCNNaBpIbqSZZQbRQUQhPop3q1U006yA2iBahOCdfTQXU1aMybiKFUcmHNQ3BVUhHEAulWcguTbhdpL3oRqKHhBcUbBtRL6iBUJVi5Ce5OhWgb3Km2q1EPZTCmmMOrjDrZ/Zj9ykYFw0UfMx9QeEY4w6IMOtlmD3hM08ACleqSGWIwG4dEGHXoWdFA6+CO3oQ6EJHrYDLCzzQwyuMOvRnoZ40Vf2Y78JW85Fh8EwmU40Rg1u4rVPRp3IdXAkZjwKPmIsPhtCEjQHvXN5JtmFm8T3q32bgt4sQ7GK9gV2jgEz9mKs2gleVDKIJjRuRmMG5EZQKYp0FGWRDqJSmzgmG0+CLTp8EUU1zyyjqIEUQpdh0Xq1MFReQdIWGH4KeqTAXKTyjJABSKk0kYclym8o+0VdRVOpThCG5qyzh2CjqaBUCecxL1KarDMBxEHpaqn6lJKvauyE0TlEQezihOHFN1OSWeeC6oyItAHygOBTDihOBVUybQu4FBeCmXAoZBTbgULFpVCxNOKBUeipMWgJpqNhQ+qh9ad6fkVn2WliB+EJhtRp+6PBZVPGtR24sL5hy9jr2mh1TDoO4K7cNT4dySZilf7ROiXeajRp06Y0HcjsbTP3QsptfmiDEI+JRtpqjDUjp4qfsdPisxlbgmGYlHx490DY/UZODZvPchu6OGh8FIxE5KzXcVvGxsFSQtU6MdpsnwSNbBkZ0+5a8nOVY1eAW8WHZhVnnX4cILsOAvQPw7TmT3j5pOv0fuM93yQWorqx1RlsYFcNRKmGIzCoGp/GT6MbaSArtUNYrBqnLKNtCsDVYtaUEBWXPPMvUZRONMLtgLtpcHLmnqR1Eg0wqlqIHKS8rllqJMooi7mqmymwSu6udyXzEg8LqIuCA9P1KFvyKSrU4XTh1L7jbU+gpVSlVNVUpUC9jBlTXUjKArUCF1YTBYpAG5d8cq7EXAUNBDfhk8f4Vm4j2hbRc6aLnlriw2s1wAOpE5+BVIynLiKtkpKMVcglPo97smkp+h7K1HiXENHIk+ax6v/iA/Z92iWjeA0eTytKpjMYTMu8PmoZvOLrth+bsEHil+Hk0D7I0QPeqO/qaB4hL1egsEwSagN496q0AcPdklIPxOLBlzjy92EjiC9wPWEhovLjYbySdFLHi1Df1ZePYZ7f6S9engR+I/wAO2f7iB4pKcJ/lVP6vzSWP6Xw7BaHu/wBGXa7LulZP/EB/ym/1H6L1sWGVdZfdnLPJBPsfUqbRxTDAOKzmV0dldeJKEjsSNBp4lGY/is9tdFFdRcGNRpNqlFbXWUK6uK6k8bGo121kZlYLFbXVxW4qMsMg0bjaw4K4qhYYrHep+0cVKWCfZm2o2+tCr13JZAxPFd9pUnhyh2I1HYgakd4U/beE/wAwWLV6Sa07LnNBtYkA+8YFjyQanTlFpg1aYMxG02e4Jo6fP/S2ZqPc2zWacx4lQabTkSkftXLuU/aTw7kkllXsMoDJbC6EsK3FR1x4JXLJ6j7BmFOylevPBSMSeClLe+420Z2V2ylxivXoq4xg3KTjI22QYMV20icgUEY9SekeIG/RDbMDjk9BulhXHRamF6NduA5wvPUenaejweRt35LSwftQxtoJHZHfF10aTDieWtUpKPt/ni6/I5c0M7X0ocx2B2R7xb67FjVaDTeQRyd9VOO9qGvJDtpo0i/fFx4rAxfTFK9395+ZT5cEXlawJ7e1ldPiyxX18M03BoypntgDxKE7EAZsa0DUlvyXj+kOnHAkMjtk+dvBedxWOdVd+8eSIPACGkiALC8L0tN/CZ5eZOv7/wBx8uRQ9z32K6dwzM3sJ3MJcT/TMLzfSPtVTJ/dUr/+4YHCA037151xOw4AiC4zrIa4wJPYk3MX0Gl/g+HE9zbf3/6PMy66b4So1aPtViusGzsnaIaG7DIkmLEtJHMkpfprFPc2ptmgwk3a07VV5MTJFgMsgMkpQY3abtbOzInadsNj/U4SWjimukCwCoB1LXFxgMpS+A6Y6wkbIz03rqlhx48sdsfj3/fb7kVknODtnmXEyQRAaQCBxC28X7Q13iNstERDPdmN5Fz3rIA99/NvknKpoNlvWGQSDlmJF+ErtljjLlpcHLGbjwmDpY+o34Kj23yDnAdwKrj8bUqXqvc6MgSIH8osOcIYxDGjeTreOwKr6YeciHRJiLAbr+CGyN3XJtzqrFtsnTxE9yjrR+EorgA+NlxFswLcfdmyYa233fH6JgG9hva0fepm0AQ6e+QFu4Dp2jUiKgBP3Xe66d17HsleOHQU51R2D/uRWdBx/wA3/pH+5cs9PjfsdEc8115Pf1cRsMc9xIa0FxMEwAJNgqs6VpnZ/eNG0A4AkAkESLG4sV4qj0TAIFdwkEWEDKIIm4jRRT9n2a1XcfdHzUfKQ7v4K+Zl2R9DbU4qalcNBc5waBmSYA5krx2EwDqYini6rRoIBb2Am3YqVOgdsycS4n4jInPM3da6l5ON8v4KeZdcL5N6v7WUGzBc+Le6LW4uIBHJG6P9q8PUMbRZYGXwAd4kE5cV5lvs0yf8Y/0/Qq49mWf5sfy/mqPR4K7k1qct9j37sS1o2i4AAF0kiIGZndcLNq+1GFDdrrQdwaCXHkI8cl5AeypiOubz6snu/eR4Lj7Ln/1HdTH+9TWhw95fBR6rJ2iN9I+2VZx/dDq23vAc4jSZBA7O9ZR6YrXJrVL5/vHfWE432Xi32j/6xP8A+i4+zrAL4iOdMePvrrx48EFUV8HNKeWT5ZlOxMkk5md5J4krhifWnNM43oyhSEvxcRuYCT/KHE6otPoBrgC3Egg3B6sHP+dW3RFSkVwvT1Wm0hlVwbawytlE5diZZ7S4gW65xEa7JPiFT/hvdXHbS/71Rvs4/TED/wCNwHmoyhhfLS/T/wAKRnlX+x/Be1eJLwNtrhrtNHiWwUw/21q/dpsHPaM+IWQ72dr6VmnmCPMKrfZfEfjpkn+OfBqjLS6WXLiisc2Zd2adf2lxLz8QYBo0gd8mSqN9pcT/AJp7mHv91Is9ncS3Rh4guJ8YQXdEYu/7kE3j3qY8HGf1WWn01Vtj+iN4uXrb+TfwftXVb8cVLcGnvaI36IuI9rnyQ1jRGjiXHtgheWPQGNIvRF8rsns95X/YuN1ogcZZN95m6i9Do27pfr/joUWpzJVyegqe0lZ2Tg3kAN34pMLq/TVSoA17pAuQIExq6M8lgfsfHAR1X9hPgZQXdFYwf8mpbc2fJZ6TTf8AFR+B1qcnez0relGgQDfIX+iawPSEXLu88968b1WJbG1SqgCDdhG7huV34xxFmlJPQ42nRaOsd8nqsX0oRe6RfimuzJvcZ8ZssF+LJBkERvBUHG7IBIJ2bHtnejh0UYPoJl1TkqNXEPOmvHUZxPDyWZWxTZLTMxbdluU/tVljfI3g8s/WiU2xWeNmIsbkCJznjovRhhiuhxTzyfU0ab/3fNzvM+uxWwlIOH83gIJHah4mhAAaWwJ13XdpxntVsOIAaS0ZzDr7jEQZt4LpUTilI7E52gADKIO4e/oeKxHPJdk74hm8EZjPetcsdkKjYj+J1yDYa/ELcQEhWoMaYBZO1aW7LjcZBJLqho8piwHv1ObfJF6RH7xwaLlzo0GZzuB4Kke/U/l8kXpSDUdnmcr6ndKfsTl1QuykDG0SIaCTMCeXrJdUxEWnjMOh3krjEBgEtdEC+zY8yq/aqbjsgkbifh370BirnWAEOdGV9eIOYuhtbVi0f1MB7i6e9OYfFNa0mCQcyCBcDWFQiqbtqCDcSLxp91avQ1m0BxRWjiUEVNwPcrHERnI52UxxlvasnpXpQgllN0bJ951u0cCPFXd09TggQTFpmCea87UfciLEm2gmTad30QXuZv0OONe+A4ucdCSSeV9Pqpw2IIkhxDt4tHIjVUmBIAkWQwwzceKIDZp+0VZsDa2gL3vM6OOZHivV9EdJNrU2vAIJkETJBHqe1fPqLL5tHMj0U90Z0i6g7aaCQRDm6OAyg7/qklC1wNGddT6MKpP4jzP5q22dGlZGC6Q6ydlr7f6SJ5GIKeIqD/lv7PyUGqLp2Miqd0dkqr8ROqVNWBLmvE3ux5PcAl6HSDHuc1gqFzfiApvlvMR7qyNY4Xjd5LjWQn03EE7D4Ak2dPdmeSl1B+zOyQPr22TWjck/aNFIqneR2wg39Qu2eSzCg+3xsrMqDj3oLWx+iJsj9bKbY6GWVyCC0ungbp1uPcfiZP8AFfzCz6T43d6Y23ce4rnmkykTToV6Yvshp/0k+UwqvxzP9U80gdrXxH1UtaTe0di59ke5ZNjbMVwnmEb7VP3QfXNKNjd4t+ZRGk/hP9TfqkkkMmw1au3ZM0xlvcvOtwtMEnYAaLnctPph76dPabTm4Fy0BoM+84nQWXmsF0g4tca9WkC5rSGN2HO4mHaHcYiQunTp7W4k8slaTNx/R2Hqsa9oDGu+FwdAM5ETZeX6Rp0mlzW1Gv2bktiQJIuRaRCnG9MU3HZZSdsbDWFrmQ07JsRsukEOj3rZcFk1cU0F807EmYOUkaRYXNuHd3YYyrk5MuSN8FsRTpgAmpBIHG2Qt2nvS+BdJdBm4uRE9iLhsfQe7ZdSDbQCCZnICxtmorYuiG2AY6TIbMcOfgurbXNnM5XxRttd7muVTLa/Azd63LLk9YLH4nan8RWM3FlzhtFxGWd72ndOSfqVGzsnaAIJkuaDeSdN85kZp99ktlGxWdYZ/E3V4GdLXTnz4pfEVSS67wNqIDmvafhNzmk8PTeJgWmQ4FtQktLc9APcCHVHv+8ADtA5bOoy2bJZ8yTGhwmjvv1P5fJd0iD1rsjc2Izud6rP7yp/L5FJvc50uLiCZmwGWsCLpr4FaLV27TRc7UNEEgNk7pP0zSRBA3g35c+zzR/s8kXkRP5IdZ+y4RYgyDeZzm6RjoGwk2GpntTfVH/M8SUsKv3pJJMnjvlV2uPmgY9fTZGscir1MKx494OJjf8ARUCYp8UjY6Mit0Cz7pdbeVnV+jyNSvXFk/pZZ2LoZoxlYJRo859gKuzo471q7CuymnFM6n0ZxK9L7N9GU2nacJ8Uvh8MAtfBuDRl6Kjll9NIpjXNs9I7qHt2HUg5piQWtIsRFuaYbiKdvdHcPBefGPI/Xmo+2l03J8c8sl5/gs696PRurNjLw0StR4EkNzzOXksgPO+PAqHP498DvlFYqDvG6tefvR2lLvcDr4n6oct7eGSoaw3Kqj6C2W6udVU041QnVVwcn5BwHpmNR4fRH6x0W8C36JIQVedxU2hkwWH6RruqFhpOaBMOL2+IHyQ+nMRXptmm0Oz2jtSRbRpsfyTTafNX6oRF0LindGptVZ5OtVxVWk0lr/ddEghpMjMxGRT9XpHFnZpsp1A7q5JdsuuBmCLaHOc8lv08O2ImPU5SifZouHTbSx8THitLNH0RlifqzzQbjw+Q9hJbEfdGsluW0JzhazK+L2GtdWpMJF3BrXOJyuHHZbe1gEas/EfcpT/E9gtp8JcStPo/E1Az36bGuMn4jAvb7inknxe1fA8Ic1b+TynSHQdcgudUNSPxbc2Nrkn0V5vF4Z+sAZCJ03wM+K+i4p2MLYDKV3G+0QGjS0ybLB/Ytc1Jf1YbqGgknkTxV8OodfW19iWXCr+lM8z0dTeyXNjaILROQyvfPkh4rFVXtz2jcOcMzlY7hYLdxXRuySb95SVHBACBnxXWppo5nCmY7Kr2tIMjKCdOSXcZN9Vv1aLgPeuJsTB8wlW9HsdGY053zt6smEZlUyZsYRiwluUmTLtdBqVpt6GaMyVZ2C2WkNuCZg/IogM1lMtcLEQQb5b+7JNMxIJmdkSMojTQ3HZuQiBZrpEGwM6nQ/IpR+yIiZB+mXeiYcOKG1UJ1iOMfqhisXTMQTN8518UrnmrBpAm8HXRazDmHqReZk3kAiMvrolsfEiA21rTeNTOpRmU3bMlroGuhn9UrWWZgIKuFxZa19/BQEDHqxWaOPn4Irca0TBO7I6oDQMu70UZpg+eSR0Og7MXOQ7TYd/ahEg+iVPXcp4C/gqPrFKgsjqwuiMvW9RJKIwHf4prBRcDfJ7foj0C7OGiOX9yrTpcflmm6VADUT3qUpIeMS7XmMhxO0Qc9CAAO5EFEmQC2DuBc6d5cT8lTrgMrxfSD+fYhuxfDv2Y04qfL6FOA9PCgD43HlHk0Keqa3M9uR4epWZ+2AXFgdcaXvwG0jdY61vr4o7ZdwKS7DLi2LXVNrgly86+SqST6+SZI1jO36/KFO2Zy5XSwdH6qxqcyhQbGWycyjUjpBPZI8PNIisNyOyoTlCSSGTG2VtB+fki7W9pI9SlGPO4Hu80SLTlGohRkkUTGSR+GOZ+hVgybXHOPUJZuJm1/XAZou3Pwz68dVNplEwzWjhJzn9EanVM8O8TzlK05j4SfLsj5plt9CBziPkpSHiGqVDF3Ryz/NLVMrEwdyLUqW07xH6odQANDjAnfb58EsXQz5MrFtJzSFSgIyWtVa4mOe75c0kLkQNewn6L0sNvg48tIUx1ENokki5Fu38llmAN27zWz08QKbWR7zjPIDd5d6xahsuk52Govm6pjGFzSAYlRhiOE8kUvyEKiJmK6oQNl4ki02SjPccJEwcosbcV6Kokq2HZcvcQIOQmTu4fksAOzFMLCQImwERA5jPlx7VhuY6AIcQO0aZabld7SWgjI9h7kEOcBF/GUZSsVRodFUlrSJdsSDMwLyLTqPJUDbbQBsfeGQBnLOYS1KrBMgmeJF+MZppziPgNnNJIJy+th4rBF3iJjt/NQGhHpAxNriDtXA1HfoeKI2Px/wDSf9qFGNEF07h2fRGad8+P1SfX7reuasMVzPckoex4vgXjlquFQ+hHekBiYyaBzUOqk5nuCFGs0DU4gqwq7vXes3aRG8VqNZoDEzvsN4PgEVgnUxxy8ki0jl4IzXCc+zMpWhkx1lKfvDsIHcJ+SO2mRkezh4+SzxX0i40mTl2ojKzuPZeb55JGmOmhxtKCSGidTF+drq4qiPu+uUys81jrG65H6BcK0j4drtt5R3IbX3DuHDVGnzg+uSp1g4euxKmtvAb2z3qu3vPrhYGEdoNwy+oMreu5RtjU2S+1uI7ihvfx7/ojRrHtobz5+C4VScpPOI7PJI21PYiBs6kdyDiNuG9s6nu8pClz3b43C/0SgO7yHgLIrZ3HttH0SNBTGg5/CBn6/JFpYl8Cx+RtxSgq349nzRG4jfH68FJr2KJjv2p2/nYRHdCP1/LuI+SzBWdw7xF+JPJXp1Brnu3couVJwKKRoDEEa85JmOA3clP2js3uJMRnMmw5+az34gCzvd1Alo332c5ulsTiC+G5jQaHi4ZnkU+PTub4BPMoINXxr32FmzFte20DvWr0ZgDDnOIDWN2nHJrQLwOKVwOFgiBtPPgmva6t1OGZSaf8QnbuJMQTIzjILry5I4HHFj/E/j1b+3Q5scHlvJP8K+fY8z0ljjWftZNFmDc3jx3pCo7iolLPddOlXCJyd8jVJvNMseCLFJl8jOPWShtWIEZ7lRCDL6oykSlKp2iBvIEEwDJiETZbnqUHEVAL9o5i6IBz9ilobfWItYnjulRU6Ke0EdXbgW/Xgj4rFu906F7OwbTVoVK/NdMIRZCU2uh51+EqDZ/dOiIcLHLURkg1sE8XAeOBB8F6HrAd6nrRlOS3gr1N4r9DzdNh2STIMxcG4NkvsnitvpiptM2Q0mCHB2Y4+BKwSP8AV4qE0ouisXaGnq4zC5ckGOZn63hE07Vy5Yw1Ry70KlryXLkowdmR7PmisyK5clCHZ8I5j+5Vr/EVy5KMwGC/xHetU9UzHrQqFy0upo9AeHyd/MgnLv8ANcuWXUwF3wDkVNL4AuXJwFqGbeQ80y/4PXBSuSS6jIPhdf4Suo/AOZ8iuXKLKoC34B61RcR67goXI9wdhujk7kfmh/eH8PyK5cpd2V7CjfiPMI3RvxHkfkuXL08HRfvscGb8TPTezuZ/iKyPb7/Hb/B81y5eKv5+X3PUf8ovseXGaHWXLl6p5wVnwhXKlcnEBtWZ0pm3kfkuXLGN1+TObP7gqYf4v5qv9yhculdSD6DixMF/5g83eShcjk6r8wQ6M1q/wnkfmvMPzPNcuU83UfF0P//Z"
                         class="card-img-top" alt="Acapulco_imagen">
                     <div class="card-body">
                         <h2 class="card-title"><strong>Acapulco</strong></h2>
-                        <div class="carta">
+                        <div class="carta_centro">
 
                             <p class="card-text">Acapulco, un balneario en la costa del Pacífico de México, se ubica en
                                 una
@@ -42,14 +79,14 @@
 
                 </div>
             </div>
-            <div class=" col-12 col-sm-12 col-lg-4">
+            <div class=" my-5 col-12  col-lg-4">
                 <div class="card">
-                    <img class="imagen"
+                    <img class="imagen_centro"
                         src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Toluca_a_los_pies_del_nevado.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title"><strong>Toluca de lerdo </strong></h2>
-                        <div class="carta">
+                        <div class="carta_centro">
                             <p class="card-text">Toluca es la elevada capital del estado central mexicano de México,
                                 conocida por su arquitectura colonial. La imponente catedral de San José y el Palacio
                                 Municipal, de estilo neoclásico, se encuentran enfrente de la plaza de los Mártires, la
@@ -68,14 +105,14 @@
 
                 </div>
             </div>
-            <div class=" col-12 col-sm-12 col-lg-4">
+            <div class="  my-5 col-12  col-lg-4">
                 <div class="card">
-                    <img class="imagen"
+                    <img class="imagen_centro"
                         src="https://www.arquired.com.mx/wp-content/uploads/2017/05/inah_zacholula_6115_5wh.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title">San Andres Cholula</h2>
-                        <div class="carta">
+                        <div class="carta_centro">
                             <p class="card-text">La Gran Pirámide de Cholula o Tlachihualtépetl es el basamento
                                 piramidal
                                 más grande del mundo con 400 metros por lado.​ Es el sitio arqueológico más grande de
@@ -95,14 +132,14 @@
 
                 </div>
             </div>
-            <div class="  mt-5 col-12 col-sm-12 col-lg-4">
+            <div class="  my-5 col-12  col-lg-4">
                 <div class="card">
-                    <img class="imagen"
+                    <img class="imagen_centro"
                         src="https://www.contrareplica.mx/uploads/2019/03/07/normal/5fc834a7bb92f78377ba6aaeacab1d29.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title">Tequila</h2>
-                        <div class="carta">
+                        <div class="carta_centro">
                             <p class="card-text">El proceso de producción se puede observar en varias destilerías y
                                 haciendas. El Museo Nacional del Tequila y el Museo Los Abuelos tienen exhibiciones
                                 sobre la
@@ -118,13 +155,13 @@
 
                 </div>
             </div>
-            <div class="  mt-5 col-12 col-sm-12 col-lg-4">
+            <div class="  my-5 col-12  col-lg-4">
                 <div class="card">
-                    <img class="imagen" src="https://www.leon.gob.mx/leon/images/image4.jpg" class="card-img-top"
+                    <img class="imagen_centro" src="https://www.leon.gob.mx/leon/images/image4.jpg" class="card-img-top"
                         alt="...">
                     <div class="card-body">
                         <h2 class="card-title">Leon</h2>
-                        <div class="carta">
+                        <div class="carta_centro">
                             <p class="card-text">León mezcla su zona histórica con la modernidad. Te ofrece lugares y
                                 actividades con matices diferentes sin importar cuál sea tu gusto; puedes consentirte
                                 comprando zapatos de excelente calidad o simplemente disfrutar la ciudad colorida, llena
@@ -143,14 +180,14 @@
 
                 </div>
             </div>
-            <div class="   mt-5 col-12 col-sm-12 col-lg-4">
+            <div class="  my-5 col-12 col-lg-4">
                 <div class="card">
-                    <img class="imagen"
+                    <img class="imagen_centro"
                         src="https://www.visitmexico.com/viajemospormexico/assets/uploads/actividades/actividades-principales_tlaxcala_huamantla_conoce-el-volcan-malintzin_01.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title">Tlaxcala</h2>
-                        <div class="carta">
+                        <div class="carta_centro">
                             <p class="card-text">Tlaxcala es un pequeño estado en el centro de México, al este de Ciudad
                                 de
                                 México. En el sur, el sitio arqueológico de Cacaxtla exhibe coloridos frescos mayas,
